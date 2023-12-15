@@ -19,7 +19,7 @@ export default async function snippetShowPage(props: SnippetShowPageProps) {
   });
 
   if (!snippet) {
-    return notFound('hello');
+    return notFound();
   }
 
   const deleteSnippetAction = serverAction.deleteSnippet.bind(null, snippet.id);
